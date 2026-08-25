@@ -1,0 +1,59 @@
+body {
+    background-color: #f2f4f7;
+}
+
+.todo-box {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.todo-box h1 {
+    color: #0d6efd;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.task-text {
+    flex: 1;
+    word-break: break-word;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.button-group {
+    display: flex;
+    gap: 5px;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+
+    .todo-box {
+        padding: 20px;
+    }
+
+    .task-item {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .button-group {
+        width: 100%;
+    }
+
+    .button-group button {
+        flex: 1;
+    }
+}

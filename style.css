@@ -1,0 +1,70 @@
+.completed {
+  text-decoration: line-through;
+}
+.wraptext{
+    margin: auto;
+}
+.inputtasks {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  padding: 7px;
+  list-style: none;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+.button-group {
+  margin-top: 10px;
+  display: flex;
+  gap: 5px;
+  justify-content: space-around;
+}
+.comtask {
+  background-color: rgb(19, 240, 78);
+  border-radius: 10px;
+  width: 100%;
+  border: none;
+}
+.edittask {
+  background-color: yellow;
+  border-radius: 10px;
+  width: 100%;
+  border: none;
+}
+.deltask {
+  background-color: red;
+  border-radius: 10px;
+  width: 100%;
+  border: none;
+}
+@media (min-width: 540px) {
+  .inputtasks {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: auto;
+  }
+  .button-group {
+    margin-top: 5px;
+    justify-content: space-around;
+  }
+  .wraptext {
+    flex: 1;
+  }
+  .button-group {
+    flex-shrink: 0;
+  }
+  .comtask{
+    width: 90px;
+    height: 30px;
+  }
+  .deltask{
+    width: 90px;
+    height: 30px;
+  }
+  .edittask{
+    width: 90px;
+    height: 30px;
+  }
+}

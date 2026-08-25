@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do-list</title>
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container bg-primary">
+    <div class="todobox mx-auto mt-5 bg-dark text-white">
+      <h1 class="text-center mb-4 text-success">To-Do-List</h1>
+      <form id="todolist">
+      <div class="mb-3 container-md col-md-6">
+        <label for="taskInput" class="form-label">Enter your Task:</label>
+        <input type="text" name="" id="task" placeholder="Enter your task" class="form-control">
+      </div>
+      <div class="d-grid col-md-6 mx-auto">
+        <button class="btn btn-primary" type="submit">Add Task</button>
+      </div>
+      <div class="mt-4">
+        <h3 class="mb-3 col-md-6 mx-auto">My Tasks:</h3>
+        <ul class="list-group" id="list">
+        </ul>
+      </div>
+    </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
